@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"scriptrunner": {
+			"type": "http",
+			"url": "https://mcp.atlassian.com/forge/1dd33d5a-4685-4816-9851-1b36b2fb3dbd"
+		}
+	}
+}

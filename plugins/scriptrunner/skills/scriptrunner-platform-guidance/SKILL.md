@@ -1,0 +1,35 @@
+---
+name: scriptrunner-platform-guidance
+description: Rules for writing ScriptRunner scripts that work first time, covering which APIs each platform offers, how Cloud differs from Data Center, and the mistakes to avoid. Read before writing, reviewing or migrating any script.
+metadata:
+    author: sms-core
+    version: '1.0'
+---
+
+# ScriptRunner Platform Guidance Skill
+
+Use this skill whenever you need ScriptRunner platform operating rules.
+
+## Activation Signals
+
+- The user asks for ScriptRunner for Jira or Confluence implementation help on Cloud or Data Center.
+- The user asks for a Data Center to Cloud migration or conversion.
+- The task involves HAPI, Java APIs, REST APIs, Behaviours, workflow functions, listeners, CQL jobs, custom macros, scripted fields, or Dev and Deployment YAML.
+
+## Workflow
+
+1. Identify the source and target platforms and products.
+2. Read `references/INDEX.md`.
+3. Read the matching guidance file:
+    - `references/cloud.md` for ScriptRunner for Jira Cloud.
+    - `references/confluence-cloud.md` for ScriptRunner for Confluence Cloud.
+    - `references/data-center.md` for ScriptRunner for Jira Data Center.
+4. For Jira Data Center to Cloud migrations, read `references/data-center.md` and the target product's Cloud guidance before producing code: Data Center explains the source semantics, while the Jira or Confluence Cloud file explains the target constraints.
+5. For Confluence Data Center to Cloud migrations, take the source semantics from the `scriptrunner-documentation` skill's `references/INDEX-CONFLUENCE-DATA-CENTER.md` and the target constraints from `references/confluence-cloud.md` before producing code. Confluence Data Center has no guidance file here, and `references/data-center.md` describes Jira Data Center only, so never apply it to a Confluence source.
+6. Apply the guidance together with focused documentation, example, REST spec, and validator lookups.
+
+## Notes
+
+- Keep platform and product assumptions explicit.
+- The guidance files are intentionally complete prompt references. The full-read rule applies to platform guidance only, not product documentation, examples, or OpenAPI specs.
+- Skip any guidance file your system prompt already includes. Otherwise read the selected guidance file in full before producing code, running API lookups, or validating an answer, in as few reads as possible. Do not delegate this read to a subagent.

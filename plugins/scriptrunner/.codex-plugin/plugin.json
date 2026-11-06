@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+	"name": "scriptrunner",
+	"displayName": "ScriptRunner",
+	"version": "0.1.0",
+	"description": "Work on ScriptRunner from your agent. Explore and change ScriptRunner for Jira Cloud listeners, scheduled jobs, workflow rules, behaviours, and Script Manager files, test a scripted field, and read execution logs to find out why a script failed. Comes with ScriptRunner documentation, example scripts, platform guidance, and Atlassian REST API specs for Cloud and Data Center. Try \"why did my listener fail last night?\" or \"write a scheduled job that closes stale work items\".",
+	"author": {
+		"name": "Adaptavist",
+		"url": "https://www.scriptrunnerhq.com"
+	},
+	"homepage": "https://docs.adaptavist.com/sr4jc/latest/features/ai-and-agents/connect-ai-agents-to-scriptrunner-for-jira-cloud-with-mcp/",
+	"repository": "https://github.com/Adaptavist/scriptrunner-agent-plugins",
+	"keywords": [
+		"scriptrunner",
+		"jira",
+		"confluence",
+		"groovy",
+		"automation",
+		"workflow",
+		"mcp"
+	],
+	"mcpServers": "./.mcp.json"
+}

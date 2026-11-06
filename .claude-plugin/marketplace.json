@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "scriptrunner",
+  "description": "ScriptRunner plugins for Claude Code and Codex.",
+  "owner": {
+    "name": "Adaptavist",
+    "url": "https://www.scriptrunnerhq.com"
+  },
+  "plugins": [
+    {
+      "name": "scriptrunner",
+      "displayName": "ScriptRunner",
+      "source": "./plugins/scriptrunner",
+      "description": "The ScriptRunner for Jira Cloud MCP server and ScriptRunner skills.",
+      "author": {
+        "name": "Adaptavist",
+        "url": "https://www.scriptrunnerhq.com"
+      },
+      "homepage": "https://github.com/Adaptavist/scriptrunner-agent-plugins",
+      "repository": "https://github.com/Adaptavist/scriptrunner-agent-plugins",
+      "category": "development",
+      "tags": ["scriptrunner", "jira", "confluence", "groovy", "mcp"],
+      "strict": true
+    }
+  ]
+}

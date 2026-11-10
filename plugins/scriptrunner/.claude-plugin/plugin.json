@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
 	"name": "scriptrunner",
 	"displayName": "ScriptRunner",
-	"version": "0.1.440188",
+	"version": "0.1.441749",
 	"description": "Work on ScriptRunner from your agent. Explore and change ScriptRunner for Jira Cloud listeners, scheduled jobs, workflow rules, behaviours, and Script Manager files, test a scripted field, and read execution logs to find out why a script failed. Comes with ScriptRunner documentation, example scripts, platform guidance, and Atlassian REST API specs for Cloud and Data Center. Try \"why did my listener fail last night?\" or \"write a scheduled job that closes stale work items\".",
 	"author": {
 		"name": "Adaptavist",
